@@ -3,8 +3,8 @@ with open("input.txt") as f:
     for line in f:
         code += (line.replace("\n", ""))
 
-ones = [0 for x in range(12)]
 
+ones = [0 for _ in range(12)]
 for i in range(len(code)):
     if code[i] == "1":
         ones[i%12] += 1
